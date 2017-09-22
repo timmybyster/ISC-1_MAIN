@@ -1,0 +1,1749 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46J13 ]
+[d frameptr 4065 ]
+"48 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _BoosterDataCommandComms BoosterDataCommandComms `(v  1 e 1 0 ]
+"418
+[v _CheckLineFault CheckLineFault `(v  1 e 1 0 ]
+"458
+[v _BoosterCommsActive BoosterCommsActive `(uc  1 e 1 0 ]
+"464
+[v _BoosterQueryStart BoosterQueryStart `(v  1 e 1 0 ]
+"473
+[v _BoosterCommandStart BoosterCommandStart `(v  1 e 1 0 ]
+"483
+[v _SetCommsLow SetCommsLow `T(v  1 e 1 0 ]
+"488
+[v _SetCommsHigh SetCommsHigh `T(v  1 e 1 0 ]
+[v i2_SetCommsHigh SetCommsHigh `T(v  1 e 1 0 ]
+"493
+[v _CheckBoosterRXParity CheckBoosterRXParity `(uc  1 e 1 0 ]
+"509
+[v _ProcessRXFrame ProcessRXFrame `(v  1 e 1 0 ]
+"577
+[v _ResetSingleBoosterState ResetSingleBoosterState `(v  1 e 1 0 ]
+[v i2_ResetSingleBoosterState ResetSingleBoosterState `(v  1 e 1 0 ]
+"589
+[v _ResetBoosterStates ResetBoosterStates `(v  1 e 1 0 ]
+[v i2_ResetBoosterStates ResetBoosterStates `(v  1 e 1 0 ]
+"596
+[v _CheckDataCollision CheckDataCollision `(uc  1 e 1 0 ]
+"607
+[v _LowestIdleWindow LowestIdleWindow `(uc  1 e 1 0 ]
+"617
+[v _NewBoosterAdded NewBoosterAdded `(uc  1 e 1 0 ]
+"624
+[v _WindowIDBacktrack WindowIDBacktrack `(uc  1 e 1 0 ]
+"640
+[v _AssignWindowID AssignWindowID `(v  1 e 1 0 ]
+"652
+[v _AssignSerialNumber AssignSerialNumber `(v  1 e 1 0 ]
+"665
+[v _SetWindowID SetWindowID `(uc  1 e 1 0 ]
+"741
+[v _LowestMissingSerial LowestMissingSerial `(uc  1 e 1 0 ]
+"751
+[v _QueryWinSerial QueryWinSerial `(uc  1 e 1 0 ]
+"805
+[v _BoosterCommsDispatcher BoosterCommsDispatcher `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"19 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\crc16.c
+[v _CRC16 CRC16 `(us  1 e 2 0 ]
+"30 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"68
+[v _main main `(v  1 e 1 0 ]
+"89
+[v _InitSystem InitSystem `(v  1 e 1 0 ]
+"169
+[v _InitStates InitStates `(v  1 e 1 0 ]
+"176
+[v _InitST7540Wrapper InitST7540Wrapper `(v  1 e 1 0 ]
+"37 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _ProcessMasterComms ProcessMasterComms `(v  1 e 1 0 ]
+"132
+[v _UpdatePacketNumber UpdatePacketNumber `(uc  1 e 1 0 ]
+"145
+[v _ForceFiringMode ForceFiringMode `(v  1 e 1 0 ]
+[v i2_ForceFiringMode ForceFiringMode `(v  1 e 1 0 ]
+"161
+[v _SetSerialNumber SetSerialNumber `(v  1 e 1 0 ]
+"178
+[v _MangleSerial MangleSerial `(us  1 e 2 0 ]
+"204
+[v _CollisionCheck CollisionCheck `(v  1 e 1 0 ]
+"213
+[v _ClearPacketNumbers ClearPacketNumbers `(v  1 e 1 0 ]
+"222
+[v _IdlePacketSlot IdlePacketSlot `(c  1 e 1 0 ]
+"233
+[v _GetPacketSlot GetPacketSlot `(c  1 e 1 0 ]
+"244
+[v _SavePacketNumber SavePacketNumber `(v  1 e 1 0 ]
+"260
+[v _GetLastPacketNumber GetLastPacketNumber `(s  1 e 2 0 ]
+"270
+[v _ClearPastValue ClearPastValue `(v  1 e 1 0 ]
+[v i2_ClearPastValue ClearPastValue `(v  1 e 1 0 ]
+"277
+[v _ClearPastValues ClearPastValues `(v  1 e 1 0 ]
+[v i2_ClearPastValues ClearPastValues `(v  1 e 1 0 ]
+"284
+[v _SetIsolationRelay SetIsolationRelay `(v  1 e 1 0 ]
+"297
+[v _ReturnBoosterData ReturnBoosterData `(v  1 e 1 0 ]
+"378
+[v _CreateAndSend CreateAndSend `(v  1 e 1 0 ]
+"393
+[v _ProcessSerialCMD ProcessSerialCMD `(v  1 e 1 0 ]
+"409
+[v _ProcessPingCMD ProcessPingCMD `(v  1 e 1 0 ]
+"18 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _WaitNewTick WaitNewTick `T(v  1 e 1 0 ]
+"23
+[v _WaitTickCount WaitTickCount `(v  1 e 1 0 ]
+"28
+[v _PPSUnlockFunc PPSUnlockFunc `T(v  1 e 1 0 ]
+"36
+[v _PPSLockFunc PPSLockFunc `T(v  1 e 1 0 ]
+"44
+[v _ReadAnalogVoltage ReadAnalogVoltage `(us  1 e 2 0 ]
+"64
+[v _InitEarthLeakage InitEarthLeakage `(v  1 e 1 0 ]
+"71
+[v _ReadEarthLeakage ReadEarthLeakage `(v  1 e 1 0 ]
+"93
+[v _ReadKeySwitch ReadKeySwitch `(v  1 e 1 0 ]
+"110
+[v _FlashReadAddress FlashReadAddress `(uc  1 e 1 0 ]
+"123
+[v _FlashEraseBlock FlashEraseBlock `(v  1 e 1 0 ]
+[v i2_FlashEraseBlock FlashEraseBlock `(v  1 e 1 0 ]
+"142
+[v _FlashUnlockSequence FlashUnlockSequence `(v  1 e 1 0 ]
+[v i2_FlashUnlockSequence FlashUnlockSequence `(v  1 e 1 0 ]
+"148
+[v _FlashWriteWord FlashWriteWord `(v  1 e 1 0 ]
+[v i2_FlashWriteWord FlashWriteWord `(v  1 e 1 0 ]
+"180
+[v _WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]
+[v i2_WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]
+"186
+[v _ReadFlashValues ReadFlashValues `(v  1 e 1 0 ]
+"88 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _InitST7540 InitST7540 `(uc  1 e 1 0 ]
+"141
+[v _WriteConfigST7540 WriteConfigST7540 `(v  1 e 1 0 ]
+"169
+[v _ReadConfigST7540 ReadConfigST7540 `(v  1 e 1 0 ]
+"200
+[v _SPIISRHandlerST7540 SPIISRHandlerST7540 `(v  1 e 1 0 ]
+"234
+[v _RXReadyISRHandlerST7540 RXReadyISRHandlerST7540 `(v  1 e 1 0 ]
+"240
+[v _LineIdleST7540 LineIdleST7540 `(uc  1 e 1 0 ]
+"246
+[v _RetransmitMessageSt7540 RetransmitMessageSt7540 `(v  1 e 1 0 ]
+"271
+[v _CreateMessageST7540 CreateMessageST7540 `(v  1 e 1 0 ]
+"297
+[v _StartTransmitST7540 StartTransmitST7540 `(v  1 e 1 0 ]
+"309
+[v _TransmitBusyST7540 TransmitBusyST7540 `(uc  1 e 1 0 ]
+"313
+[v _ReceiveNewDataST7540 ReceiveNewDataST7540 `(v  1 e 1 0 ]
+"323
+[v _PacketReadParamST7540 PacketReadParamST7540 `(us  1 e 2 0 ]
+"350
+[v _PacketDataST7540 PacketDataST7540 `(*.39uc  1 e 2 0 ]
+"354
+[v _DataReadyST7540 DataReadyST7540 `(uc  1 e 1 0 ]
+"358
+[v _CheckCRCST7540 CheckCRCST7540 `(uc  1 e 1 0 ]
+"371
+[v _InitST7540Pins InitST7540Pins `(v  1 e 1 0 ]
+"13 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _commsStatusUCG commsStatusUCG `uc  1 e 1 0 ]
+"14
+[v _commsTXBitsUSLG commsTXBitsUSLG `um  1 e 3 0 ]
+"15
+[v _commsDataModeUCG commsDataModeUCG `uc  1 e 1 0 ]
+"16
+[v _commandResponseUS commandResponseUS `us  1 e 2 0 ]
+"18
+[v _ISO_COUNTER ISO_COUNTER `uc  1 e 1 0 ]
+"19
+[v _counterELTTests counterELTTests `us  1 e 2 0 ]
+"20
+[v _counterELTFailures counterELTFailures `us  1 e 2 0 ]
+"21
+[v _commsOffsetADCValueUS commsOffsetADCValueUS `us  1 e 2 0 ]
+"22
+[v _cableFaultCounter cableFaultCounter `uc  1 e 1 0 ]
+"23
+[v _QueryFailureCounter QueryFailureCounter `uc  1 e 1 0 ]
+"25
+[v _missingSerialWinUCS missingSerialWinUCS `uc  1 e 1 0 ]
+"26
+[v _statusGetSerialUCS statusGetSerialUCS `uc  1 e 1 0 ]
+"27
+[v _dispStatusUCS dispStatusUCS `uc  1 e 1 0 ]
+"28
+[v _boosterCountUC boosterCountUC `uc  1 e 1 0 ]
+"32
+[v _boosterCommsData boosterCommsData `[8][30]uc  1 e 240 0 ]
+"33
+[v _boosterCommsDataSerial boosterCommsDataSerial `[30]us  1 e 60 0 ]
+[s S2825 . 1 `uc 1 IOLOCK 1 0 :1:0 
+]
+"1102 C:\Program Files (x86)\Microchip\xc8\v1.36\include\pic18f46j13.h
+[u S2827 . 1 `S2825 1 . 1 0 ]
+[v _PPSCONbits PPSCONbits `VES2827  1 e 1 @3775 ]
+"1237
+[v _RPOR21 RPOR21 `VEuc  1 e 1 @3797 ]
+"1345
+[v _RPINR21 RPINR21 `VEuc  1 e 1 @3836 ]
+"1351
+[v _RPINR22 RPINR22 `VEuc  1 e 1 @3837 ]
+[s S2355 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 PCFG4 1 0 :1:4 
+`uc 1 PCFG5 1 0 :1:5 
+`uc 1 PCFG6 1 0 :1:6 
+`uc 1 PCFG7 1 0 :1:7 
+]
+"3746
+[u S2364 . 1 `S2355 1 . 1 0 ]
+[v _ANCON0bits ANCON0bits `VES2364  1 e 1 @3912 ]
+[s S1067 . 1 `uc 1 PCFG8 1 0 :1:0 
+`uc 1 PCFG9 1 0 :1:1 
+`uc 1 PCFG10 1 0 :1:2 
+`uc 1 PCFG11 1 0 :1:3 
+`uc 1 PCFG12 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 VBGEN 1 0 :1:7 
+]
+"3810
+[s S1075 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PCFG15 1 0 :1:7 
+]
+[u S1078 . 1 `S1067 1 . 1 0 `S1075 1 . 1 0 ]
+[v _ANCON1bits ANCON1bits `VES1078  1 e 1 @3913 ]
+[s S226 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5409
+[s S232 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S237 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKP2 1 0 :1:4 
+]
+[s S240 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SSPEN2 1 0 :1:5 
+]
+[s S243 . 1 `uc 1 SSPM02 1 0 :1:0 
+]
+[s S245 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+]
+[s S248 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 SSPM22 1 0 :1:2 
+]
+[s S251 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPM32 1 0 :1:3 
+]
+[s S254 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 SSPOV2 1 0 :1:6 
+]
+[s S257 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S260 . 1 `S226 1 . 1 0 `S232 1 . 1 0 `S237 1 . 1 0 `S240 1 . 1 0 `S243 1 . 1 0 `S245 1 . 1 0 `S248 1 . 1 0 `S251 1 . 1 0 `S254 1 . 1 0 `S257 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES260  1 e 1 @3954 ]
+[s S25 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"5618
+[s S28 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S31 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S40 . 1 `uc 1 BF2 1 0 :1:0 
+]
+[s S42 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CKE2 1 0 :1:6 
+]
+[s S45 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA2 1 0 :1:5 
+]
+[s S48 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DATA_ADDRESS2 1 0 :1:5 
+]
+[s S51 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_A2 1 0 :1:5 
+]
+[s S54 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_nA2 1 0 :1:5 
+]
+[s S57 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 I2C_DAT2 1 0 :1:5 
+]
+[s S60 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ2 1 0 :1:2 
+]
+[s S63 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 I2C_START2 1 0 :1:3 
+]
+[s S66 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 I2C_STOP2 1 0 :1:4 
+]
+[s S69 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 P2 1 0 :1:4 
+]
+[s S72 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE2 1 0 :1:2 
+]
+[s S75 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW2 1 0 :1:2 
+]
+[s S78 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W2 1 0 :1:2 
+]
+[s S81 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW2 1 0 :1:2 
+]
+[s S84 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 S2 1 0 :1:3 
+]
+[s S87 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SMP2 1 0 :1:7 
+]
+[s S90 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START2 1 0 :1:3 
+]
+[s S93 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP2 1 0 :1:4 
+]
+[s S96 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 UA2 1 0 :1:1 
+]
+[s S99 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S102 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 nADDRESS2 1 0 :1:5 
+]
+[s S105 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+]
+[s S108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE2 1 0 :1:2 
+]
+[u S111 . 1 `S25 1 . 1 0 `S28 1 . 1 0 `S31 1 . 1 0 `S40 1 . 1 0 `S42 1 . 1 0 `S45 1 . 1 0 `S48 1 . 1 0 `S51 1 . 1 0 `S54 1 . 1 0 `S57 1 . 1 0 `S60 1 . 1 0 `S63 1 . 1 0 `S66 1 . 1 0 `S69 1 . 1 0 `S72 1 . 1 0 `S75 1 . 1 0 `S78 1 . 1 0 `S81 1 . 1 0 `S84 1 . 1 0 `S87 1 . 1 0 `S90 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 `S99 1 . 1 0 `S102 1 . 1 0 `S105 1 . 1 0 `S108 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES111  1 e 1 @3955 ]
+"5943
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3957 ]
+[s S692 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"7373
+[s S701 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 PMA1 1 0 :1:4 
+`uc 1 PMA0 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S710 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 PMPBE 1 0 :1:1 
+`uc 1 CTED1 1 0 :1:2 
+`uc 1 CTED2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S719 . 1 `uc 1 RP3 1 0 :1:0 
+`uc 1 RTCC 1 0 :1:1 
+`uc 1 PMA3 1 0 :1:2 
+`uc 1 PMA2 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 RP9 1 0 :1:6 
+`uc 1 RP10 1 0 :1:7 
+]
+[s S727 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PMBE 1 0 :1:1 
+`uc 1 REFO 1 0 :1:2 
+]
+[s S731 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RP4 1 0 :1:1 
+`uc 1 RP5 1 0 :1:2 
+`uc 1 RP6 1 0 :1:3 
+`uc 1 RP7 1 0 :1:4 
+`uc 1 RP8 1 0 :1:5 
+]
+[s S738 . 1 `uc 1 C3IND 1 0 :1:0 
+`uc 1 C3INC 1 0 :1:1 
+`uc 1 C2INC 1 0 :1:2 
+`uc 1 C3INA 1 0 :1:3 
+]
+[s S743 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CCP4 1 0 :1:4 
+`uc 1 CCP5 1 0 :1:5 
+`uc 1 CCP6 1 0 :1:6 
+`uc 1 CCP7 1 0 :1:7 
+]
+[s S749 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S752 . 1 `S692 1 . 1 0 `S701 1 . 1 0 `S710 1 . 1 0 `S719 1 . 1 0 `S727 1 . 1 0 `S731 1 . 1 0 `S738 1 . 1 0 `S743 1 . 1 0 `S749 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES752  1 e 1 @3969 ]
+[s S823 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"7684
+[s S832 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 AN11 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 PMA5 1 0 :1:6 
+`uc 1 PMA4 1 0 :1:7 
+]
+[s S839 . 1 `uc 1 T1CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CTPLS 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX1 1 0 :1:6 
+`uc 1 RX1 1 0 :1:7 
+]
+[s S846 . 1 `uc 1 RP11 1 0 :1:0 
+`uc 1 RP12 1 0 :1:1 
+`uc 1 RP13 1 0 :1:2 
+`uc 1 SCL1 1 0 :1:3 
+`uc 1 SDA1 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK1 1 0 :1:6 
+`uc 1 DT1 1 0 :1:7 
+]
+[s S855 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 C2IND 1 0 :1:2 
+]
+[s S858 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RP14 1 0 :1:3 
+`uc 1 RP15 1 0 :1:4 
+`uc 1 RP16 1 0 :1:5 
+`uc 1 RP17 1 0 :1:6 
+`uc 1 RP18 1 0 :1:7 
+]
+[s S865 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP8 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCK1 1 0 :1:3 
+`uc 1 SDI1 1 0 :1:4 
+`uc 1 SDO1 1 0 :1:5 
+`uc 1 CCP9 1 0 :1:6 
+`uc 1 CCP10 1 0 :1:7 
+]
+[s S874 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+]
+[s S877 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S880 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S883 . 1 `S823 1 . 1 0 `S832 1 . 1 0 `S839 1 . 1 0 `S846 1 . 1 0 `S855 1 . 1 0 `S858 1 . 1 0 `S865 1 . 1 0 `S874 1 . 1 0 `S877 1 . 1 0 `S880 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES883  1 e 1 @3970 ]
+[s S620 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"7924
+[s S629 . 1 `uc 1 PMD0 1 0 :1:0 
+`uc 1 PMD1 1 0 :1:1 
+`uc 1 PMD2 1 0 :1:2 
+`uc 1 PMD3 1 0 :1:3 
+`uc 1 PMD4 1 0 :1:4 
+`uc 1 PMD5 1 0 :1:5 
+`uc 1 PMD6 1 0 :1:6 
+`uc 1 PMD7 1 0 :1:7 
+]
+[s S638 . 1 `uc 1 SCL2 1 0 :1:0 
+`uc 1 SDA2 1 0 :1:1 
+`uc 1 RP19 1 0 :1:2 
+`uc 1 RP20 1 0 :1:3 
+`uc 1 RP21 1 0 :1:4 
+`uc 1 RP22 1 0 :1:5 
+`uc 1 RP23 1 0 :1:6 
+`uc 1 RP24 1 0 :1:7 
+]
+[s S647 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S650 . 1 `S620 1 . 1 0 `S629 1 . 1 0 `S638 1 . 1 0 `S647 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES650  1 e 1 @3971 ]
+[s S1281 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"8493
+[s S1290 . 1 `uc 1 LA0 1 0 :1:0 
+]
+[s S1292 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+]
+[s S1295 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LA2 1 0 :1:2 
+]
+[s S1298 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LA3 1 0 :1:3 
+]
+[s S1301 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LA5 1 0 :1:5 
+]
+[s S1304 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LA6 1 0 :1:6 
+]
+[s S1307 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S1310 . 1 `S1281 1 . 1 0 `S1290 1 . 1 0 `S1292 1 . 1 0 `S1295 1 . 1 0 `S1298 1 . 1 0 `S1301 1 . 1 0 `S1304 1 . 1 0 `S1307 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1310  1 e 1 @3977 ]
+[s S1355 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"8615
+[s S1364 . 1 `uc 1 LB0 1 0 :1:0 
+]
+[s S1366 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+]
+[s S1369 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LB2 1 0 :1:2 
+]
+[s S1372 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LB3 1 0 :1:3 
+]
+[s S1375 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S1378 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S1381 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S1384 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1387 . 1 `S1355 1 . 1 0 `S1364 1 . 1 0 `S1366 1 . 1 0 `S1369 1 . 1 0 `S1372 1 . 1 0 `S1375 1 . 1 0 `S1378 1 . 1 0 `S1381 1 . 1 0 `S1384 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1387  1 e 1 @3978 ]
+[s S545 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"8747
+[s S554 . 1 `uc 1 LC0 1 0 :1:0 
+]
+[s S556 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+]
+[s S559 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LC2 1 0 :1:2 
+]
+[s S562 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LC3 1 0 :1:3 
+]
+[s S565 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LC4 1 0 :1:4 
+]
+[s S568 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LC5 1 0 :1:5 
+]
+[s S571 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LC6 1 0 :1:6 
+]
+[s S574 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S577 . 1 `S545 1 . 1 0 `S554 1 . 1 0 `S556 1 . 1 0 `S559 1 . 1 0 `S562 1 . 1 0 `S565 1 . 1 0 `S568 1 . 1 0 `S571 1 . 1 0 `S574 1 . 1 0 ]
+[v _LATCbits LATCbits `VES577  1 e 1 @3979 ]
+[s S470 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"8879
+[s S479 . 1 `uc 1 LD0 1 0 :1:0 
+]
+[s S481 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+]
+[s S484 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LD2 1 0 :1:2 
+]
+[s S487 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LD3 1 0 :1:3 
+]
+[s S490 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LD4 1 0 :1:4 
+]
+[s S493 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LD5 1 0 :1:5 
+]
+[s S496 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LD6 1 0 :1:6 
+]
+[s S499 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S502 . 1 `S470 1 . 1 0 `S479 1 . 1 0 `S481 1 . 1 0 `S484 1 . 1 0 `S487 1 . 1 0 `S490 1 . 1 0 `S493 1 . 1 0 `S496 1 . 1 0 `S499 1 . 1 0 ]
+[v _LATDbits LATDbits `VES502  1 e 1 @3980 ]
+[s S2393 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"8986
+[s S2397 . 1 `uc 1 LE0 1 0 :1:0 
+]
+[s S2399 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+]
+[s S2402 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S2405 . 1 `S2393 1 . 1 0 `S2397 1 . 1 0 `S2399 1 . 1 0 `S2402 1 . 1 0 ]
+[v _LATEbits LATEbits `VES2405  1 e 1 @3981 ]
+[s S2115 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"9277
+[u S2124 . 1 `S2115 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES2124  1 e 1 @3986 ]
+[s S1025 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"9333
+[u S1034 . 1 `S1025 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1034  1 e 1 @3987 ]
+[s S1046 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"9394
+[u S1055 . 1 `S1046 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES1055  1 e 1 @3988 ]
+[s S1004 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"9455
+[u S1013 . 1 `S1004 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1013  1 e 1 @3989 ]
+[s S2376 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 REPU 1 0 :1:6 
+`uc 1 RDPU 1 0 :1:7 
+]
+"9514
+[u S2383 . 1 `S2376 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES2383  1 e 1 @3990 ]
+[s S1861 . 1 `uc 1 TUN 1 0 :6:0 
+`uc 1 PLLEN 1 0 :1:6 
+`uc 1 INTSRC 1 0 :1:7 
+]
+"9881
+[s S1865 . 1 `uc 1 TUN0 1 0 :1:0 
+`uc 1 TUN1 1 0 :1:1 
+`uc 1 TUN2 1 0 :1:2 
+`uc 1 TUN3 1 0 :1:3 
+`uc 1 TUN4 1 0 :1:4 
+`uc 1 TUN5 1 0 :1:5 
+]
+[u S1872 . 1 `S1861 1 . 1 0 `S1865 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES1872  1 e 1 @3995 ]
+[s S1946 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PMPIE 1 0 :1:7 
+]
+"10094
+[s S1955 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[s S1960 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S1963 . 1 `S1946 1 . 1 0 `S1955 1 . 1 0 `S1960 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1963  1 e 1 @3997 ]
+[s S1676 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PMPIF 1 0 :1:7 
+]
+"10185
+[s S1685 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[s S1690 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S1693 . 1 `S1676 1 . 1 0 `S1685 1 . 1 0 `S1690 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1693  1 e 1 @3998 ]
+[s S353 . 1 `uc 1 RTCCIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 CTMUIE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 BCL2IE 1 0 :1:6 
+`uc 1 SSP2IE 1 0 :1:7 
+]
+"10624
+[s S362 . 1 `uc 1 RXB0IE 1 0 :1:0 
+]
+[s S364 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+]
+[s S367 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+[s S370 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXB0IE 1 0 :1:2 
+]
+[s S373 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+[s S376 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S379 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S382 . 1 `S353 1 . 1 0 `S362 1 . 1 0 `S364 1 . 1 0 `S367 1 . 1 0 `S370 1 . 1 0 `S373 1 . 1 0 `S376 1 . 1 0 `S379 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES382  1 e 1 @4003 ]
+[s S318 . 1 `uc 1 RTCCIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 CTMUIF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 BCL2IF 1 0 :1:6 
+`uc 1 SSP2IF 1 0 :1:7 
+]
+"10728
+[s S327 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+[s S330 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S333 . 1 `S318 1 . 1 0 `S327 1 . 1 0 `S330 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES333  1 e 1 @4004 ]
+[s S2991 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 WPROG 1 0 :1:5 
+]
+"10876
+[u S2998 . 1 `S2991 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES2998  1 e 1 @4006 ]
+"10905
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+[s S1985 . 1 `uc 1 ADCS 1 0 :3:0 
+`uc 1 ACQT 1 0 :3:3 
+`uc 1 ADCAL 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"13386
+[s S1990 . 1 `uc 1 ADCS0 1 0 :1:0 
+`uc 1 ADCS1 1 0 :1:1 
+`uc 1 ADCS2 1 0 :1:2 
+`uc 1 ACQT0 1 0 :1:3 
+`uc 1 ACQT1 1 0 :1:4 
+`uc 1 ACQT2 1 0 :1:5 
+]
+[s S1997 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+]
+[s S2000 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG01 1 0 :1:4 
+]
+[s S2003 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S2006 . 1 `S1985 1 . 1 0 `S1990 1 . 1 0 `S1997 1 . 1 0 `S2000 1 . 1 0 `S2003 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES2006  1 e 1 @4033 ]
+[s S2034 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"13506
+[s S2037 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 VCFG 1 0 :2:6 
+]
+[s S2042 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 VCFG0 1 0 :1:6 
+`uc 1 VCFG1 1 0 :1:7 
+]
+[s S2051 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S2054 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S2057 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S2060 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S2063 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[s S2066 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S2069 . 1 `S2034 1 . 1 0 `S2037 1 . 1 0 `S2042 1 . 1 0 `S2051 1 . 1 0 `S2054 1 . 1 0 `S2057 1 . 1 0 `S2060 1 . 1 0 `S2063 1 . 1 0 `S2066 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES2069  1 e 1 @4034 ]
+"13600
+[v _ADRES ADRES `VEus  1 e 2 @4035 ]
+[s S1918 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"15439
+[s S1922 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S1930 . 1 `S1918 1 . 1 0 `S1922 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1930  1 e 1 @4042 ]
+"15488
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+[s S1887 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"16568
+[s S1893 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S1900 . 1 `S1887 1 . 1 0 `S1893 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES1900  1 e 1 @4051 ]
+[s S421 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"17446
+[s S430 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S439 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S443 . 1 `S421 1 . 1 0 `S430 1 . 1 0 `S439 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES443  1 e 1 @4082 ]
+"17574
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"17601
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"17620
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"17639
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"22 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _statusFlagsUSLG statusFlagsUSLG `VEum  1 e 3 0 ]
+"14 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _masterFlagsUCG masterFlagsUCG `uc  1 e 1 0 ]
+"15
+[v _masterCommsTimeoutUSG masterCommsTimeoutUSG `us  1 e 2 0 ]
+"16
+[v _iscSerialUSG iscSerialUSG `us  1 e 2 0 ]
+"17
+[v _pastBoosterValuesUSAG pastBoosterValuesUSAG `[4][31]us  1 e 248 0 ]
+"18
+[v _packetNumbersUSAG packetNumbersUSAG `[2][31]us  1 e 124 0 ]
+"12 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _nextSerialUSG nextSerialUSG `us  1 e 2 0 ]
+"73 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _flagST7540UCG flagST7540UCG `uc  1 e 1 0 ]
+"74
+[v _bufferTXST7540UCAG bufferTXST7540UCAG `[79]uc  1 e 79 0 ]
+"75
+[v _bufferRXST7540UCAG bufferRXST7540UCAG `[75]uc  1 e 75 0 ]
+"76
+[v _bufferTXLenUCG bufferTXLenUCG `uc  1 e 1 0 ]
+"77
+[v _bufferTXNextUCG bufferTXNextUCG `uc  1 e 1 0 ]
+"79
+[v _bufferRXNextUCG bufferRXNextUCG `uc  1 e 1 0 ]
+"80
+[v _packetNumberUCG packetNumberUCG `uc  1 e 1 0 ]
+"68 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"87
+} 0
+"488 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _SetCommsHigh SetCommsHigh `T(v  1 e 1 0 ]
+{
+"491
+} 0
+"37 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _ProcessMasterComms ProcessMasterComms `(v  1 e 1 0 ]
+{
+"40
+[v ProcessMasterComms@respSerialUS respSerialUS `us  1 a 2 108 ]
+"39
+[v ProcessMasterComms@destSerialUS destSerialUS `us  1 a 2 106 ]
+"41
+[v ProcessMasterComms@currentPacketNumberUS currentPacketNumberUS `us  1 a 2 104 ]
+"38
+[v ProcessMasterComms@recvCmdUC recvCmdUC `uc  1 a 1 110 ]
+"130
+} 0
+"132
+[v _UpdatePacketNumber UpdatePacketNumber `(uc  1 e 1 0 ]
+{
+"133
+[v UpdatePacketNumber@pastPacketNumberS pastPacketNumberS `s  1 a 2 20 ]
+"132
+[v UpdatePacketNumber@serialNumberUS serialNumberUS `us  1 p 2 11 ]
+[v UpdatePacketNumber@packetNumberS packetNumberS `s  1 p 2 13 ]
+"143
+} 0
+"260
+[v _GetLastPacketNumber GetLastPacketNumber `(s  1 e 2 0 ]
+{
+"261
+[v GetLastPacketNumber@iscCountUC iscCountUC `uc  1 a 1 4 ]
+"260
+[v GetLastPacketNumber@srcSerialUS srcSerialUS `us  1 p 2 0 ]
+"268
+} 0
+"161
+[v _SetSerialNumber SetSerialNumber `(v  1 e 1 0 ]
+{
+"162
+[v SetSerialNumber@dataBufUSP dataBufUSP `*.39us  1 a 2 44 ]
+"161
+[v SetSerialNumber@respSerialUS respSerialUS `us  1 p 2 38 ]
+"176
+} 0
+"284
+[v _SetIsolationRelay SetIsolationRelay `(v  1 e 1 0 ]
+{
+[v SetIsolationRelay@relayStateUC relayStateUC `uc  1 a 1 wreg ]
+[v SetIsolationRelay@relayStateUC relayStateUC `uc  1 a 1 wreg ]
+[v SetIsolationRelay@relayStateUC relayStateUC `uc  1 a 1 0 ]
+"295
+} 0
+"297
+[v _ReturnBoosterData ReturnBoosterData `(v  1 e 1 0 ]
+{
+[v ReturnBoosterData@commandValUC commandValUC `uc  1 a 1 wreg ]
+"299
+[v ReturnBoosterData@allRespUSA allRespUSA `[31]us  1 a 62 62 ]
+"300
+[v ReturnBoosterData@partRespUSA partRespUSA `[31]us  1 a 62 0 ]
+"305
+[v ReturnBoosterData@windowCompareUS windowCompareUS `us  1 a 2 124 ]
+"298
+[v ReturnBoosterData@boosterCountUC boosterCountUC `uc  1 a 1 131 ]
+"304
+[v ReturnBoosterData@dataValUC dataValUC `uc  1 a 1 130 ]
+"302
+[v ReturnBoosterData@wordCountUC wordCountUC `uc  1 a 1 129 ]
+"303
+[v ReturnBoosterData@respCountUC respCountUC `uc  1 a 1 127 ]
+"301
+[v ReturnBoosterData@iscStatusUC iscStatusUC `uc  1 a 1 126 ]
+"297
+[v ReturnBoosterData@commandValUC commandValUC `uc  1 a 1 wreg ]
+[v ReturnBoosterData@respSerialUS respSerialUS `us  1 p 2 38 ]
+"301
+[v ReturnBoosterData@commandValUC commandValUC `uc  1 a 1 128 ]
+"376
+} 0
+"246 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _RetransmitMessageSt7540 RetransmitMessageSt7540 `(v  1 e 1 0 ]
+{
+"253
+[v RetransmitMessageSt7540@dataBuf dataBuf `*.39uc  1 a 2 32 ]
+"248
+[v RetransmitMessageSt7540@packetDestUS packetDestUS `us  1 a 2 30 ]
+"247
+[v RetransmitMessageSt7540@packetSourceUS packetSourceUS `us  1 a 2 28 ]
+"252
+[v RetransmitMessageSt7540@packetDataLenUC packetDataLenUC `uc  1 a 1 36 ]
+"250
+[v RetransmitMessageSt7540@oldPacketNumberUC oldPacketNumberUC `uc  1 a 1 35 ]
+"249
+[v RetransmitMessageSt7540@commandUC commandUC `uc  1 a 1 34 ]
+"269
+} 0
+"350
+[v _PacketDataST7540 PacketDataST7540 `(*.39uc  1 e 2 0 ]
+{
+"352
+} 0
+"313
+[v _ReceiveNewDataST7540 ReceiveNewDataST7540 `(v  1 e 1 0 ]
+{
+"314
+[v ReceiveNewDataST7540@discardUC discardUC `uc  1 a 1 0 ]
+"321
+} 0
+"393 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _ProcessSerialCMD ProcessSerialCMD `(v  1 e 1 0 ]
+{
+"394
+[v ProcessSerialCMD@serialListUSA serialListUSA `[30]us  1 a 60 42 ]
+"395
+[v ProcessSerialCMD@boosterCountUC boosterCountUC `uc  1 a 1 103 ]
+"396
+[v ProcessSerialCMD@boosterIndexUC boosterIndexUC `uc  1 a 1 102 ]
+"393
+[v ProcessSerialCMD@respSerialUS respSerialUS `us  1 p 2 38 ]
+"407
+} 0
+"409
+[v _ProcessPingCMD ProcessPingCMD `(v  1 e 1 0 ]
+{
+[v ProcessPingCMD@respSerialUS respSerialUS `us  1 p 2 38 ]
+"411
+} 0
+"378
+[v _CreateAndSend CreateAndSend `(v  1 e 1 0 ]
+{
+"379
+[v CreateAndSend@nextPacketNumberUS nextPacketNumberUS `us  1 a 2 36 ]
+"378
+[v CreateAndSend@packetSourceUS packetSourceUS `us  1 p 2 28 ]
+[v CreateAndSend@packetDestUS packetDestUS `us  1 p 2 30 ]
+[v CreateAndSend@commandUC commandUC `uc  1 p 1 32 ]
+[v CreateAndSend@dataLenUC dataLenUC `uc  1 p 1 33 ]
+[v CreateAndSend@dataBuf dataBuf `*.39uc  1 p 2 34 ]
+"391
+} 0
+"309 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _TransmitBusyST7540 TransmitBusyST7540 `(uc  1 e 1 0 ]
+{
+"311
+} 0
+"297
+[v _StartTransmitST7540 StartTransmitST7540 `(v  1 e 1 0 ]
+{
+"298
+[v StartTransmitST7540@discardUC discardUC `uc  1 a 1 0 ]
+"307
+} 0
+"244 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _SavePacketNumber SavePacketNumber `(v  1 e 1 0 ]
+{
+"245
+[v SavePacketNumber@saveSlotC saveSlotC `c  1 a 1 10 ]
+"244
+[v SavePacketNumber@srcSerialUS srcSerialUS `us  1 p 2 5 ]
+[v SavePacketNumber@packetNumberUC packetNumberUC `uc  1 p 1 7 ]
+"258
+} 0
+"222
+[v _IdlePacketSlot IdlePacketSlot `(c  1 e 1 0 ]
+{
+"223
+[v IdlePacketSlot@iscCountC iscCountC `c  1 a 1 2 ]
+"231
+} 0
+"233
+[v _GetPacketSlot GetPacketSlot `(c  1 e 1 0 ]
+{
+"234
+[v GetPacketSlot@saveSlotC saveSlotC `c  1 a 1 4 ]
+"233
+[v GetPacketSlot@srcSerialUS srcSerialUS `us  1 p 2 0 ]
+"242
+} 0
+"323 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _PacketReadParamST7540 PacketReadParamST7540 `(us  1 e 2 0 ]
+{
+[v PacketReadParamST7540@paramName paramName `uc  1 a 1 wreg ]
+"324
+[v PacketReadParamST7540@retValueUS retValueUS `us  1 a 2 26 ]
+"323
+[v PacketReadParamST7540@paramName paramName `uc  1 a 1 wreg ]
+[v PacketReadParamST7540@paramName paramName `uc  1 a 1 25 ]
+"348
+} 0
+"358
+[v _CheckCRCST7540 CheckCRCST7540 `(uc  1 e 1 0 ]
+{
+"360
+[v CheckCRCST7540@receivedCRCUS receivedCRCUS `us  1 a 2 18 ]
+"359
+[v CheckCRCST7540@expectedCRCUS expectedCRCUS `us  1 a 2 16 ]
+"361
+[v CheckCRCST7540@packetLenUC packetLenUC `uc  1 a 1 20 ]
+"369
+} 0
+"271
+[v _CreateMessageST7540 CreateMessageST7540 `(v  1 e 1 0 ]
+{
+"273
+[v CreateMessageST7540@packetCRCUS packetCRCUS `us  1 a 2 23 ]
+"272
+[v CreateMessageST7540@dataBufLocUC dataBufLocUC `uc  1 a 1 25 ]
+"271
+[v CreateMessageST7540@packetSourceUS packetSourceUS `us  1 p 2 13 ]
+[v CreateMessageST7540@packetDestUS packetDestUS `us  1 p 2 15 ]
+[v CreateMessageST7540@commandUC commandUC `uc  1 p 1 17 ]
+[v CreateMessageST7540@dataLenUC dataLenUC `uc  1 p 1 18 ]
+[v CreateMessageST7540@dataBuf dataBuf `*.39uc  1 p 2 19 ]
+"295
+} 0
+"19 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\crc16.c
+[v _CRC16 CRC16 `(us  1 e 2 0 ]
+{
+"23
+[v CRC16@crc crc `ui  1 a 2 11 ]
+"22
+[v CRC16@data data `ui  1 a 2 8 ]
+"21
+[v CRC16@i i `uc  1 a 1 10 ]
+"19
+[v CRC16@data_p data_p `*.39uc  1 p 2 0 ]
+[v CRC16@length length `us  1 p 2 2 ]
+"45
+} 0
+"204 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _CollisionCheck CollisionCheck `(v  1 e 1 0 ]
+{
+"205
+[v CollisionCheck@delayValueUS delayValueUS `us  1 a 2 15 ]
+"211
+} 0
+"178
+[v _MangleSerial MangleSerial `(us  1 e 2 0 ]
+{
+"179
+[v MangleSerial@cycleCountUC cycleCountUC `uc  1 a 1 14 ]
+"181
+[v MangleSerial@b12UC b12UC `uc  1 a 1 13 ]
+[v MangleSerial@b10UC b10UC `uc  1 a 1 12 ]
+[v MangleSerial@b6UC b6UC `uc  1 a 1 11 ]
+[v MangleSerial@b4UC b4UC `uc  1 a 1 10 ]
+[v MangleSerial@b2UC b2UC `uc  1 a 1 9 ]
+[v MangleSerial@b1UC b1UC `uc  1 a 1 8 ]
+[v MangleSerial@b0UC b0UC `uc  1 a 1 7 ]
+"180
+[v MangleSerial@xorOutputUC xorOutputUC `uc  1 a 1 6 ]
+"178
+[v MangleSerial@mangleValueUS mangleValueUS `us  1 p 2 0 ]
+"202
+} 0
+"240 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _LineIdleST7540 LineIdleST7540 `(uc  1 e 1 0 ]
+{
+"244
+} 0
+"145 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _ForceFiringMode ForceFiringMode `(v  1 e 1 0 ]
+{
+[v ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 wreg ]
+[v ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 wreg ]
+"147
+[v ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 2 ]
+"159
+} 0
+"277
+[v _ClearPastValues ClearPastValues `(v  1 e 1 0 ]
+{
+"278
+[v ClearPastValues@boosterCountUC boosterCountUC `uc  1 a 1 1 ]
+"282
+} 0
+"270
+[v _ClearPastValue ClearPastValue `(v  1 e 1 0 ]
+{
+[v ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 wreg ]
+[v ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 wreg ]
+[v ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 0 ]
+"275
+} 0
+"354 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _DataReadyST7540 DataReadyST7540 `(uc  1 e 1 0 ]
+{
+"356
+} 0
+"89 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _InitSystem InitSystem `(v  1 e 1 0 ]
+{
+"167
+} 0
+"169
+[v _InitStates InitStates `(v  1 e 1 0 ]
+{
+"174
+} 0
+"589 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _ResetBoosterStates ResetBoosterStates `(v  1 e 1 0 ]
+{
+[v ResetBoosterStates@boosterCountUC boosterCountUC `uc  1 a 1 1 ]
+"594
+} 0
+"577
+[v _ResetSingleBoosterState ResetSingleBoosterState `(v  1 e 1 0 ]
+{
+[v ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 wreg ]
+[v ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 wreg ]
+[v ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 0 ]
+"587
+} 0
+"186 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _ReadFlashValues ReadFlashValues `(v  1 e 1 0 ]
+{
+"197
+} 0
+"180
+[v _WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]
+{
+"184
+} 0
+"148
+[v _FlashWriteWord FlashWriteWord `(v  1 e 1 0 ]
+{
+"149
+[v FlashWriteWord@intStatusUC intStatusUC `uc  1 a 1 4 ]
+"148
+[v FlashWriteWord@flashAddressUS flashAddressUS `us  1 p 2 0 ]
+[v FlashWriteWord@lsbUC lsbUC `uc  1 p 1 2 ]
+[v FlashWriteWord@msbUC msbUC `uc  1 p 1 3 ]
+"178
+} 0
+"123
+[v _FlashEraseBlock FlashEraseBlock `(v  1 e 1 0 ]
+{
+"124
+[v FlashEraseBlock@intStatusUC intStatusUC `uc  1 a 1 2 ]
+"123
+[v FlashEraseBlock@flashAddressUS flashAddressUS `us  1 p 2 0 ]
+"140
+} 0
+"142
+[v _FlashUnlockSequence FlashUnlockSequence `(v  1 e 1 0 ]
+{
+"146
+} 0
+"110
+[v _FlashReadAddress FlashReadAddress `(uc  1 e 1 0 ]
+{
+[v FlashReadAddress@flashAddressUS flashAddressUS `us  1 p 2 0 ]
+"121
+} 0
+"213 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v _ClearPacketNumbers ClearPacketNumbers `(v  1 e 1 0 ]
+{
+"214
+[v ClearPacketNumbers@iscCountUC iscCountUC `uc  1 a 1 0 ]
+"220
+} 0
+"176 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _InitST7540Wrapper InitST7540Wrapper `(v  1 e 1 0 ]
+{
+"177
+[v InitST7540Wrapper@initCountUC initCountUC `uc  1 a 1 25 ]
+"186
+} 0
+"88 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _InitST7540 InitST7540 `(uc  1 e 1 0 ]
+{
+"92
+[v InitST7540@configDataRXUS configDataRXUS `um  1 a 3 22 ]
+"90
+[v InitST7540@frameDataRXUS frameDataRXUS `um  1 a 3 19 ]
+"91
+[v InitST7540@configDataTXUS configDataTXUS `um  1 a 3 16 ]
+"89
+[v InitST7540@frameDataTXUS frameDataTXUS `um  1 a 3 13 ]
+"139
+} 0
+"141
+[v _WriteConfigST7540 WriteConfigST7540 `(v  1 e 1 0 ]
+{
+"143
+[v WriteConfigST7540@bitsSentUC bitsSentUC `uc  1 a 1 12 ]
+"142
+[v WriteConfigST7540@discardUC discardUC `uc  1 a 1 11 ]
+"141
+[v WriteConfigST7540@frameDataUS frameDataUS `um  1 p 3 2 ]
+[v WriteConfigST7540@configDataUS configDataUS `um  1 p 3 5 ]
+"167
+} 0
+"23 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _WaitTickCount WaitTickCount `(v  1 e 1 0 ]
+{
+[v WaitTickCount@tickCountUS tickCountUS `us  1 p 2 0 ]
+"26
+} 0
+"18
+[v _WaitNewTick WaitNewTick `T(v  1 e 1 0 ]
+{
+"21
+} 0
+"169 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _ReadConfigST7540 ReadConfigST7540 `(v  1 e 1 0 ]
+{
+"170
+[v ReadConfigST7540@bitsReceivedUC bitsReceivedUC `uc  1 a 1 8 ]
+"171
+[v ReadConfigST7540@discardUC discardUC `uc  1 a 1 7 ]
+"169
+[v ReadConfigST7540@frameDataUS frameDataUS `*.39um  1 p 2 0 ]
+[v ReadConfigST7540@configDataUS configDataUS `*.39um  1 p 2 2 ]
+"198
+} 0
+"371
+[v _InitST7540Pins InitST7540Pins `(v  1 e 1 0 ]
+{
+"430
+} 0
+"28 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _PPSUnlockFunc PPSUnlockFunc `T(v  1 e 1 0 ]
+{
+"34
+} 0
+"36
+[v _PPSLockFunc PPSLockFunc `T(v  1 e 1 0 ]
+{
+"42
+} 0
+"30 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"31
+[v isr@discardUC discardUC `uc  1 a 1 52 ]
+"64
+} 0
+"145 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v i2_ForceFiringMode ForceFiringMode `(v  1 e 1 0 ]
+{
+[v i2ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 wreg ]
+[v i2ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 wreg ]
+"147
+[v i2ForceFiringMode@forceModeUC forceModeUC `uc  1 a 1 2 ]
+"159
+} 0
+"200 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\ST7540.c
+[v _SPIISRHandlerST7540 SPIISRHandlerST7540 `(v  1 e 1 0 ]
+{
+"201
+[v SPIISRHandlerST7540@dataReadUC dataReadUC `uc  1 a 1 0 ]
+"232
+} 0
+"234
+[v _RXReadyISRHandlerST7540 RXReadyISRHandlerST7540 `(v  1 e 1 0 ]
+{
+"238
+} 0
+"48 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _BoosterDataCommandComms BoosterDataCommandComms `(v  1 e 1 0 ]
+{
+"54
+[v BoosterDataCommandComms@commsADCValueUS commsADCValueUS `us  1 a 2 19 ]
+"49
+[v BoosterDataCommandComms@counterCommsStatusUSS counterCommsStatusUSS `us  1 s 2 counterCommsStatusUSS ]
+"50
+[v BoosterDataCommandComms@counterSyncStatusUSS counterSyncStatusUSS `us  1 s 2 counterSyncStatusUSS ]
+"51
+[v BoosterDataCommandComms@commsBitsSentUCS commsBitsSentUCS `uc  1 s 1 commsBitsSentUCS ]
+"52
+[v BoosterDataCommandComms@framesReceivedPhaseUCS framesReceivedPhaseUCS `uc  1 s 1 framesReceivedPhaseUCS ]
+"55
+[v BoosterDataCommandComms@syncModeUCS syncModeUCS `uc  1 s 1 syncModeUCS ]
+"56
+[v BoosterDataCommandComms@bitsReadUCS bitsReadUCS `uc  1 s 1 bitsReadUCS ]
+"57
+[v BoosterDataCommandComms@lvlCountUCS lvlCountUCS `uc  1 s 1 lvlCountUCS ]
+"58
+[v BoosterDataCommandComms@recvFrameUSS recvFrameUSS `us  1 s 2 recvFrameUSS ]
+"59
+[v BoosterDataCommandComms@cableFaultModeUCS cableFaultModeUCS `uc  1 s 1 cableFaultModeUCS ]
+"60
+[v BoosterDataCommandComms@cableTestUCS cableTestUCS `uc  1 s 1 cableTestUCS ]
+"416
+} 0
+"488
+[v i2_SetCommsHigh SetCommsHigh `T(v  1 e 1 0 ]
+{
+"491
+} 0
+"483
+[v _SetCommsLow SetCommsLow `T(v  1 e 1 0 ]
+{
+"486
+} 0
+"93 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _ReadKeySwitch ReadKeySwitch `(v  1 e 1 0 ]
+{
+"94
+[v ReadKeySwitch@keySwitchValueUS keySwitchValueUS `us  1 a 2 3 ]
+"108
+} 0
+"71
+[v _ReadEarthLeakage ReadEarthLeakage `(v  1 e 1 0 ]
+{
+"72
+[v ReadEarthLeakage@earthLeakageValueUS earthLeakageValueUS `us  1 a 2 3 ]
+"91
+} 0
+"509 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _ProcessRXFrame ProcessRXFrame `(v  1 e 1 0 ]
+{
+"510
+[v ProcessRXFrame@parityCheckUC parityCheckUC `uc  1 a 1 16 ]
+"509
+[v ProcessRXFrame@recvFrameUS recvFrameUS `us  1 p 2 6 ]
+[v ProcessRXFrame@frameNumUC frameNumUC `uc  1 p 1 8 ]
+"575
+} 0
+"64 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _InitEarthLeakage InitEarthLeakage `(v  1 e 1 0 ]
+{
+"69
+} 0
+"418 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _CheckLineFault CheckLineFault `(v  1 e 1 0 ]
+{
+"434
+[v CheckLineFault@i_1610 i `i  1 a 2 12 ]
+"424
+[v CheckLineFault@i i `i  1 a 2 14 ]
+"419
+[v CheckLineFault@lineVoltUS lineVoltUS `us  1 a 2 10 ]
+"432
+[v CheckLineFault@activeWindowCounter activeWindowCounter `i  1 a 2 8 ]
+"456
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.36\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"44 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v _ReadAnalogVoltage ReadAnalogVoltage `(us  1 e 2 0 ]
+{
+[v ReadAnalogVoltage@channelC channelC `uc  1 a 1 wreg ]
+[v ReadAnalogVoltage@channelC channelC `uc  1 a 1 wreg ]
+[v ReadAnalogVoltage@channelC channelC `uc  1 a 1 2 ]
+"62
+} 0
+"805 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _BoosterCommsDispatcher BoosterCommsDispatcher `(v  1 e 1 0 ]
+{
+"854
+} 0
+"277 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v i2_ClearPastValues ClearPastValues `(v  1 e 1 0 ]
+{
+[v i2ClearPastValues@boosterCountUC ClearPastValues `uc  1 a 1 1 ]
+"282
+} 0
+"665 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _SetWindowID SetWindowID `(uc  1 e 1 0 ]
+{
+"666
+[v SetWindowID@statusSetIDUCS statusSetIDUCS `uc  1 s 1 statusSetIDUCS ]
+"667
+[v SetWindowID@currentBitUCS currentBitUCS `uc  1 s 1 currentBitUCS ]
+"668
+[v SetWindowID@currentSerialUSS currentSerialUSS `us  1 s 2 currentSerialUSS ]
+"739
+} 0
+"589
+[v i2_ResetBoosterStates ResetBoosterStates `(v  1 e 1 0 ]
+{
+[v i2ResetBoosterStates@boosterCountUC ResetBoosterStates `uc  1 a 1 1 ]
+"594
+} 0
+"624
+[v _WindowIDBacktrack WindowIDBacktrack `(uc  1 e 1 0 ]
+{
+[v WindowIDBacktrack@currentBitUC currentBitUC `*.39uc  1 p 2 21 ]
+[v WindowIDBacktrack@currentSerialUS currentSerialUS `*.39us  1 p 2 23 ]
+[v WindowIDBacktrack@statusSetIDUC statusSetIDUC `*.39uc  1 p 2 25 ]
+"638
+} 0
+"640
+[v _AssignWindowID AssignWindowID `(v  1 e 1 0 ]
+{
+"642
+[v AssignWindowID@serialNumberUS serialNumberUS `us  1 a 2 21 ]
+"641
+[v AssignWindowID@newWindowUC newWindowUC `uc  1 a 1 23 ]
+"650
+} 0
+"652
+[v _AssignSerialNumber AssignSerialNumber `(v  1 e 1 0 ]
+{
+"655
+} 0
+"180 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\peripherals.c
+[v i2_WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]
+{
+"184
+} 0
+"148
+[v i2_FlashWriteWord FlashWriteWord `(v  1 e 1 0 ]
+{
+[v i2FlashWriteWord@intStatusUC FlashWriteWord `uc  1 a 1 4 ]
+[v i2FlashWriteWord@flashAddressUS flashAddressUS `us  1 p 2 0 ]
+[v i2FlashWriteWord@lsbUC lsbUC `uc  1 p 1 2 ]
+[v i2FlashWriteWord@msbUC msbUC `uc  1 p 1 3 ]
+"178
+} 0
+"123
+[v i2_FlashEraseBlock FlashEraseBlock `(v  1 e 1 0 ]
+{
+[v i2FlashEraseBlock@intStatusUC FlashEraseBlock `uc  1 a 1 2 ]
+[v i2FlashEraseBlock@flashAddressUS flashAddressUS `us  1 p 2 0 ]
+"140
+} 0
+"142
+[v i2_FlashUnlockSequence FlashUnlockSequence `(v  1 e 1 0 ]
+{
+"146
+} 0
+"751 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _QueryWinSerial QueryWinSerial `(uc  1 e 1 0 ]
+{
+"781
+[v QueryWinSerial@j j `uc  1 a 1 27 ]
+"780
+[v QueryWinSerial@i i `uc  1 a 1 28 ]
+"754
+[v QueryWinSerial@serialNumberUS serialNumberUS `us  1 a 2 25 ]
+"803
+} 0
+"577
+[v i2_ResetSingleBoosterState ResetSingleBoosterState `(v  1 e 1 0 ]
+{
+[v i2ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 wreg ]
+[v i2ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 wreg ]
+[v i2ResetSingleBoosterState@boosterNumberUC boosterNumberUC `uc  1 a 1 0 ]
+"587
+} 0
+"270 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\mastercomms.c
+[v i2_ClearPastValue ClearPastValue `(v  1 e 1 0 ]
+{
+[v i2ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 wreg ]
+[v i2ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 wreg ]
+[v i2ClearPastValue@valuePosUC valuePosUC `uc  1 a 1 0 ]
+"275
+} 0
+"741 M:\Intelligent Blasting System\ISC-1\Firmware\Released 19-07-2017\ISC-1_N3.X\boostercomms.c
+[v _LowestMissingSerial LowestMissingSerial `(uc  1 e 1 0 ]
+{
+"749
+} 0
+"473
+[v _BoosterCommandStart BoosterCommandStart `(v  1 e 1 0 ]
+{
+[v BoosterCommandStart@destSerialUS destSerialUS `us  1 p 2 6 ]
+[v BoosterCommandStart@destCommandUC destCommandUC `uc  1 p 1 8 ]
+[v BoosterCommandStart@destPayloadUC destPayloadUC `uc  1 p 1 9 ]
+"481
+} 0
+"493
+[v _CheckBoosterRXParity CheckBoosterRXParity `(uc  1 e 1 0 ]
+{
+"496
+[v CheckBoosterRXParity@tmpRecvFrameUS tmpRecvFrameUS `us  1 a 2 2 ]
+"494
+[v CheckBoosterRXParity@bitCountUC bitCountUC `uc  1 a 1 5 ]
+"495
+[v CheckBoosterRXParity@bitParityUC bitParityUC `uc  1 a 1 4 ]
+"493
+[v CheckBoosterRXParity@recvFrameUS recvFrameUS `us  1 p 2 0 ]
+"507
+} 0
+"617
+[v _NewBoosterAdded NewBoosterAdded `(uc  1 e 1 0 ]
+{
+"622
+} 0
+"607
+[v _LowestIdleWindow LowestIdleWindow `(uc  1 e 1 0 ]
+{
+[v LowestIdleWindow@boosterCountUC boosterCountUC `uc  1 a 1 2 ]
+"615
+} 0
+"596
+[v _CheckDataCollision CheckDataCollision `(uc  1 e 1 0 ]
+{
+[v CheckDataCollision@boosterCountUC boosterCountUC `uc  1 a 1 0 ]
+"605
+} 0
+"464
+[v _BoosterQueryStart BoosterQueryStart `(v  1 e 1 0 ]
+{
+[v BoosterQueryStart@queryValUC queryValUC `uc  1 a 1 wreg ]
+[v BoosterQueryStart@queryValUC queryValUC `uc  1 a 1 wreg ]
+[v BoosterQueryStart@queryValUC queryValUC `uc  1 a 1 0 ]
+"471
+} 0
+"458
+[v _BoosterCommsActive BoosterCommsActive `(uc  1 e 1 0 ]
+{
+"462
+} 0

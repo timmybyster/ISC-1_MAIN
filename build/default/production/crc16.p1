@@ -1,0 +1,93 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"19 crc16.c
+[v _CRC16 `(us ~T0 @X0 1 ef2`*uc`us ]
+"20
+{
+[; ;crc16.c: 19: unsigned short CRC16(char *data_p, unsigned short length)
+[; ;crc16.c: 20: {
+[e :U _CRC16 ]
+"19
+[v _data_p `*uc ~T0 @X0 1 r1 ]
+[v _length `us ~T0 @X0 1 r2 ]
+"20
+[f ]
+"21
+[v _i `uc ~T0 @X0 1 a ]
+"22
+[v _data `ui ~T0 @X0 1 a ]
+"23
+[v _crc `ui ~T0 @X0 1 a ]
+[; ;crc16.c: 21: unsigned char i;
+[; ;crc16.c: 22: unsigned int data;
+[; ;crc16.c: 23: unsigned int crc = 0xffff;
+[e = _crc -> 65535 `ui ]
+[; ;crc16.c: 25: if (length == 0)
+"25
+[e $ ! == -> _length `ui -> -> 0 `i `ui 2  ]
+[; ;crc16.c: 26: return (~crc);
+"26
+[e ) -> ~ _crc `us ]
+[e $UE 1  ]
+[e :U 2 ]
+[; ;crc16.c: 28: do
+"28
+[e :U 5 ]
+[; ;crc16.c: 29: {
+"29
+{
+[; ;crc16.c: 30: for (i=0, data=(unsigned int)0xff & *data_p++;
+"30
+{
+[e ; = _i -> -> 0 `i `uc = _data & -> -> 255 `i `ui -> *U ++ _data_p * -> -> 1 `i `x -> -> # *U _data_p `i `x `ui ]
+[; ;crc16.c: 31: i < 8;
+[; ;crc16.c: 32: i++, data >>= 1)
+[e $ < -> _i `i -> 8 `i 6  ]
+[e $U 7  ]
+"33
+[e :U 6 ]
+[; ;crc16.c: 33: {
+{
+[; ;crc16.c: 34: if ((crc & 0x0001) ^ (data & 0x0001))
+"34
+[e $ ! != ^ & _crc -> -> 1 `i `ui & _data -> -> 1 `i `ui -> -> 0 `i `ui 9  ]
+[; ;crc16.c: 35: crc = (crc >> 1) ^ 0x8408;
+"35
+[e = _crc ^ >> _crc -> 1 `i -> 33800 `ui ]
+[e $U 10  ]
+"36
+[e :U 9 ]
+[; ;crc16.c: 36: else crc >>= 1;
+[e =>> _crc -> 1 `i ]
+[e :U 10 ]
+"37
+}
+"32
+[e ; ++ _i -> -> 1 `i `uc =>> _data -> 1 `i ]
+"31
+[e $ < -> _i `i -> 8 `i 6  ]
+[e :U 7 ]
+"37
+}
+"38
+}
+[; ;crc16.c: 37: }
+[; ;crc16.c: 38: } while (--length);
+[e $ != -> =- _length -> -> 1 `i `us `ui -> -> -> 0 `i `us `ui 5  ]
+[e :U 4 ]
+[; ;crc16.c: 40: crc = ~crc;
+"40
+[e = _crc ~ _crc ]
+[; ;crc16.c: 41: data = crc;
+"41
+[e = _data _crc ]
+[; ;crc16.c: 42: crc = (crc << 8) | (data >> 8 & 0xff);
+"42
+[e = _crc | << _crc -> 8 `i & >> _data -> 8 `i -> -> 255 `i `ui ]
+[; ;crc16.c: 44: return (crc);
+"44
+[e ) -> _crc `us ]
+[e $UE 1  ]
+[; ;crc16.c: 45: }
+"45
+[e :UE 1 ]
+}
