@@ -15,6 +15,8 @@ extern unsigned char  ISO_COUNTER;                                              
 extern unsigned short counterELTTests;                                      //Track number of ELT tests performed
 extern unsigned short counterELTFailures;                                   //Track number of failures
 
+void writeRegisterToProgram(unsigned short address, unsigned char buffer[]);
+
 inline void WaitNewTick(void){                                                  
     while(!(statusFlagsUSLG & FLAG_TICK));                                      //Wait for the start of a new tick
     statusFlagsUSLG &= ~FLAG_TICK;                                              //Unset it and return
@@ -107,6 +109,45 @@ void ReadKeySwitch(void){                                                       
         statusFlagsUSLG |= FLAG_SWITCH_ARMED;                                   //Else, it's isolated
 }
 
+void writeBootloaderState(void){
+    unsigned char buffer[64];
+    for(int i = 0; i < 64; i ++){
+        buffer[i] = 1;
+    }
+    writeRegisterToProgram(BOOTLOADER_STATE_MEMORY, buffer);
+}
+
+void writeExecutableState(void){
+    FlashWriteWord(FLASH_ISC_BOOTLOAD, 0x0000, 0x0000);
+}
+
+
+void writeRegisterToProgram(unsigned short address, unsigned char buffer[]){ 
+    address --;                                                                 //subtract 1 index from the address pointer
+    TBLPTRU = 0x00;                                                             //Load Address to write
+    TBLPTRH = (unsigned char)(address >> 8);
+    TBLPTRL = (unsigned char)(address & 0xFF);
+    
+    TABLAT = buffer[63];
+    asm("TBLWT*+");
+    for(int i = 0; i < 63; i++){                                                //write 64 bytes to holding register
+            TABLAT = buffer[i];
+            asm("TBLWT*+");
+    }
+    
+    //Set WREN bit and disable Interrupts
+    EECON1bits.WREN = 1;                                                        //enable writes
+    INTCONbits.GIE = 0;                                                         //disable interrupts
+
+    EECON2 = 0x55;                                                              //Write 0x55 and 0xAA                                                              
+    EECON2 = 0xAA;
+
+    EECON1bits.WR = 1;                                                          //begin the write
+    while(EECON1bits.WR);                                                       //wait for the write to complete
+    INTCONbits.GIE = 1;                                                         //re-enable interrupts
+    EECON1bits.WREN = 0;                                                        //Disable Writes
+}
+
 unsigned char FlashReadAddress(unsigned short flashAddressUS){
 
     TBLPTRU = 0;                                                                //Configure flash read address
@@ -191,7 +232,27 @@ void ReadFlashValues(void){
 
     if(nextSerialUSG == 0xFFFF){                                                //Did we read default values?
         nextSerialUSG = 1;                                                      //First IB651 serial should be 1
-        iscSerialUSG = PROGRAM_SERIAL_NUMBER;                                   //ISC serial should be default
+        getSerialFromMemory();
         WriteFlashValues();                                                     //Save these values
+    }
+}
+
+void getSerialFromMemory(void){
+    unsigned char state[64];
+    readRegisterFromProgram(SERIAL_MEMORY, state);
+    
+    iscSerialUSG = state[1] << 8;
+    iscSerialUSG |= state[0];
+    
+}
+
+void readRegisterFromProgram(unsigned short address, unsigned char buffer[]){
+    TBLPTRU = 0x00;                                                             //Load Address to read
+    TBLPTRH = (unsigned char)(address >> 8);
+    TBLPTRL = (unsigned char)(address & 0xFF);
+    
+    for(int i = 0; i < 64; i ++){                                               //read 64 bytes from memory
+        asm("TBLRD*+");
+        buffer[i] = TABLAT;
     }
 }

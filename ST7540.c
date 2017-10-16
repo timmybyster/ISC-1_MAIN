@@ -220,6 +220,8 @@ void SPIISRHandlerST7540(void){
     }else if(flagST7540UCG & FLAG_ST7540_RX_ACTIVE){                            //Are we in RX mode
         bufferRXST7540UCAG[bufferRXNextUCG++] = dataReadUC;                     //Read next byte
         if(bufferRXST7540UCAG[0] == bufferRXNextUCG){                           //Entire packet read?
+            if(bufferRXST7540UCAG[6] == 0x31)
+                bufferRXST7540UCAG[0] = 9; 
             flagST7540UCG |= FLAG_ST7540_DATA_READY;                            //Mark data as ready
             flagST7540UCG &= ~FLAG_ST7540_RX_ACTIVE;                            //Disable RX mode
             SSP2CON1bits.SSPEN = 0;                                             //Disable SPI module

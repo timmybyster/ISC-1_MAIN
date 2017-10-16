@@ -66,6 +66,9 @@ extern volatile unsigned short long statusFlagsUSLG;
 
 #define PROGRAM_SERIAL_NUMBER           0x005D                                 //Serial number programmed onto test units LAST PROGRAMMED 0X006B SN 0107
 
+#define BOOTLOADER_STATE_MEMORY         0x3C00
+#define SERIAL_MEMORY                   0x4000
+
 //System flags
 #define FLAG_NULL                       0b000000000000000000000000
 #define FLAG_TICK                       0b000000000000000000000001              //Clock tick generated (every 100us)
@@ -238,7 +241,8 @@ extern volatile unsigned short long statusFlagsUSLG;
 
 #define Counter_ELT_Tests               5           //test 5 times
 //Define significant addresses, new ones grow down
-#define FLASH_ISC_SERIAL                0xFBFC
+#define FLASH_ISC_BOOTLOAD              0xFBFC
+#define FLASH_ISC_SERIAL                0xFBFD
 #define FLASH_NEXT_SERIAL               0xFBFE
 
 //ADC channel commands

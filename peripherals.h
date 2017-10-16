@@ -13,6 +13,9 @@ void WaitTickCount(unsigned short);                                             
 inline void PPSUnlockFunc(void);                                                //Unlock the PPS module for configuration
 inline void PPSLockFunc(void);                                                  //Lock the PPS module for configuration
 unsigned short ReadAnalogVoltage(unsigned char);                                //Read a specific analog voltage
+void writeBootloaderState(void);
+void writeExecutableState(void);
+void writeStateToMemory(unsigned char data);
 unsigned char FlashReadAddress(unsigned short);                                 //Read an address from flash
 void FlashUnlockSequence(void);                                                 //Flash write unlock sequence
 void FlashWriteWord(unsigned short, unsigned char, unsigned char);              //Write a word to flash
@@ -21,7 +24,8 @@ void ReadFlashValues(void);                                                     
 void InitEarthLeakage(void);                                                    //Initialize the earth leakage read
 void ReadEarthLeakage(void);                                                    //Check for an earth leakage problem, should only do this in the booster comms routine
 void ReadKeySwitch(void);                                                       //Read the state of the keyswitch
-
+void readRegisterFromProgram(unsigned short address, unsigned char buffer[]);
+void getSerialFromMemory(void);
 extern unsigned short nextSerialUSG;
 
 #endif	/* PERIPHERALS_H */

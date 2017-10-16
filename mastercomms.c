@@ -34,6 +34,8 @@ signed char GetPacketSlot(unsigned short);                                      
 void SetSerialNumber(unsigned short);                                           //Set the serial number for an ISC with the default serial
 unsigned char UpdatePacketNumber(unsigned short, short);                        //Check if a packet number should be updated and update if so
 
+extern void writeStateToMemory(unsigned char data);
+
 void ProcessMasterComms(void){
     unsigned char recvCmdUC;
     unsigned short destSerialUS;
@@ -111,10 +113,10 @@ void ProcessMasterComms(void){
                 NOP();
                 ProcessPingCMD(respSerialUS);                                   //Respond to ping if requested
                 break;
-                //Software blasting routines below, not implemented yet
-//            case(MASTER_CMD_ARM):
-                //remember to set flag when arming
-//                break;
+            case(MASTER_CMD_BL):                                                //Set the unit unit bootloader mode
+                writeBootloaderState();
+                RESET();
+                break;
 //            case(MASTER_CMD_DISARM):
                 //remember to clear flag when disarming
 //                break;

@@ -29,7 +29,7 @@ extern unsigned short masterCommsTimeoutUSG;
 #define MASTER_CMD_GET_SERIAL       0b00000111
 #define MASTER_CMD_BLAST            0b00100101
 #define MASTER_CMD_PING             0b00101001
-//#define MASTER_CMD_ARM            0b00110001
+#define MASTER_CMD_BL               0b00110001
 //#define MASTER_CMD_DISARM         0b00110000
 #define MASTER_CMD_BUSY             0b00001111
 #define MASTER_CMD_SRL_CHNG         0b00001000
