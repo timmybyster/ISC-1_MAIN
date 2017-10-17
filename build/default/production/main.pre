@@ -9289,7 +9289,7 @@ InitST7540Wrapper();
 SetCommsHigh();
 
 statusFlagsUSLG |= 0b000000001000000000000000;
-
+getSerialFromMemory();
 while(1){
 ProcessMasterComms();
 

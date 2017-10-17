@@ -232,7 +232,6 @@ void ReadFlashValues(void){
 
     if(nextSerialUSG == 0xFFFF){                                                //Did we read default values?
         nextSerialUSG = 1;                                                      //First IB651 serial should be 1
-        getSerialFromMemory();
         WriteFlashValues();                                                     //Save these values
     }
 }

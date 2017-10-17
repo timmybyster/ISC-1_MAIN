@@ -157,9 +157,9 @@
 [v i2_WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]
 "227
 [v _ReadFlashValues ReadFlashValues `(v  1 e 1 0 ]
-"240
+"239
 [v _getSerialFromMemory getSerialFromMemory `(v  1 e 1 0 ]
-"249
+"248
 [v _readRegisterFromProgram readRegisterFromProgram `(v  1 e 1 0 ]
 "88 C:\Users\User\Documents\MPLAB Projects\ISC-1_MAIN.X\ST7540.c
 [v _InitST7540 InitST7540 `(uc  1 e 1 0 ]
@@ -225,18 +225,18 @@
 [v _boosterCommsData boosterCommsData `[8][30]uc  1 e 240 0 ]
 "33
 [v _boosterCommsDataSerial boosterCommsDataSerial `[30]us  1 e 60 0 ]
-[s S2397 . 1 `uc 1 IOLOCK 1 0 :1:0 
+[s S2401 . 1 `uc 1 IOLOCK 1 0 :1:0 
 ]
 "1108 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46j13.h
-[u S2399 . 1 `S2397 1 . 1 0 ]
-[v _PPSCONbits PPSCONbits `VES2399  1 e 1 @3775 ]
+[u S2403 . 1 `S2401 1 . 1 0 ]
+[v _PPSCONbits PPSCONbits `VES2403  1 e 1 @3775 ]
 "1265
 [v _RPOR21 RPOR21 `VEuc  1 e 1 @3797 ]
 "1391
 [v _RPINR21 RPINR21 `VEuc  1 e 1 @3836 ]
 "1398
 [v _RPINR22 RPINR22 `VEuc  1 e 1 @3837 ]
-[s S1984 . 1 `uc 1 PCFG0 1 0 :1:0 
+[s S1988 . 1 `uc 1 PCFG0 1 0 :1:0 
 `uc 1 PCFG1 1 0 :1:1 
 `uc 1 PCFG2 1 0 :1:2 
 `uc 1 PCFG3 1 0 :1:3 
@@ -246,8 +246,8 @@
 `uc 1 PCFG7 1 0 :1:7 
 ]
 "3786
-[u S1993 . 1 `S1984 1 . 1 0 ]
-[v _ANCON0bits ANCON0bits `VES1993  1 e 1 @3912 ]
+[u S1997 . 1 `S1988 1 . 1 0 ]
+[v _ANCON0bits ANCON0bits `VES1997  1 e 1 @3912 ]
 [s S896 . 1 `uc 1 PCFG8 1 0 :1:0 
 `uc 1 PCFG9 1 0 :1:1 
 `uc 1 PCFG10 1 0 :1:2 
@@ -605,18 +605,18 @@
 ]
 [u S392 . 1 `S374 1 . 1 0 `S383 1 . 1 0 ]
 [v _LATDbits LATDbits `VES392  1 e 1 @3980 ]
-[s S2022 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S2026 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "8808
-[s S2026 . 1 `uc 1 LE0 1 0 :1:0 
+[s S2030 . 1 `uc 1 LE0 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 `uc 1 LE2 1 0 :1:2 
 ]
-[u S2030 . 1 `S2022 1 . 1 0 `S2026 1 . 1 0 ]
-[v _LATEbits LATEbits `VES2030  1 e 1 @3981 ]
-[s S1824 . 1 `uc 1 TRISA0 1 0 :1:0 
+[u S2034 . 1 `S2026 1 . 1 0 `S2030 1 . 1 0 ]
+[v _LATEbits LATEbits `VES2034  1 e 1 @3981 ]
+[s S1828 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -626,8 +626,8 @@
 `uc 1 TRISA7 1 0 :1:7 
 ]
 "9104
-[u S1833 . 1 `S1824 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES1833  1 e 1 @3986 ]
+[u S1837 . 1 `S1828 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1837  1 e 1 @3986 ]
 [s S854 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
@@ -664,7 +664,7 @@
 "9285
 [u S842 . 1 `S833 1 . 1 0 ]
 [v _TRISDbits TRISDbits `VES842  1 e 1 @3989 ]
-[s S2005 . 1 `uc 1 TRISE0 1 0 :1:0 
+[s S2009 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -672,23 +672,23 @@
 `uc 1 RDPU 1 0 :1:7 
 ]
 "9345
-[u S2012 . 1 `S2005 1 . 1 0 ]
-[v _TRISEbits TRISEbits `VES2012  1 e 1 @3990 ]
-[s S1583 . 1 `uc 1 TUN 1 0 :6:0 
+[u S2016 . 1 `S2009 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES2016  1 e 1 @3990 ]
+[s S1587 . 1 `uc 1 TUN 1 0 :6:0 
 `uc 1 PLLEN 1 0 :1:6 
 `uc 1 INTSRC 1 0 :1:7 
 ]
 "9709
-[s S1587 . 1 `uc 1 TUN0 1 0 :1:0 
+[s S1591 . 1 `uc 1 TUN0 1 0 :1:0 
 `uc 1 TUN1 1 0 :1:1 
 `uc 1 TUN2 1 0 :1:2 
 `uc 1 TUN3 1 0 :1:3 
 `uc 1 TUN4 1 0 :1:4 
 `uc 1 TUN5 1 0 :1:5 
 ]
-[u S1594 . 1 `S1583 1 . 1 0 `S1587 1 . 1 0 ]
-[v _OSCTUNEbits OSCTUNEbits `VES1594  1 e 1 @3995 ]
-[s S1668 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[u S1598 . 1 `S1587 1 . 1 0 `S1591 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES1598  1 e 1 @3995 ]
+[s S1672 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -698,16 +698,16 @@
 `uc 1 PMPIE 1 0 :1:7 
 ]
 "9922
-[s S1677 . 1 `uc 1 . 1 0 :3:0 
+[s S1681 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPIE 1 0 :1:3 
 `uc 1 TXIE 1 0 :1:4 
 `uc 1 RCIE 1 0 :1:5 
 ]
-[s S1682 . 1 `uc 1 . 1 0 :7:0 
+[s S1686 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 PSPIE 1 0 :1:7 
 ]
-[u S1685 . 1 `S1668 1 . 1 0 `S1677 1 . 1 0 `S1682 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES1685  1 e 1 @3997 ]
+[u S1689 . 1 `S1672 1 . 1 0 `S1681 1 . 1 0 `S1686 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1689  1 e 1 @3997 ]
 [s S1400 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
@@ -768,7 +768,7 @@
 ]
 [u S262 . 1 `S248 1 . 1 0 `S257 1 . 1 0 ]
 [v _PIR3bits PIR3bits `VES262  1 e 1 @4004 ]
-[s S2526 . 1 `uc 1 . 1 0 :1:0 
+[s S2530 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -776,40 +776,40 @@
 `uc 1 WPROG 1 0 :1:5 
 ]
 "10695
-[u S2533 . 1 `S2526 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES2533  1 e 1 @4006 ]
+[u S2537 . 1 `S2530 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES2537  1 e 1 @4006 ]
 "10725
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
-[s S1707 . 1 `uc 1 ADCS 1 0 :3:0 
+[s S1711 . 1 `uc 1 ADCS 1 0 :3:0 
 `uc 1 ACQT 1 0 :3:3 
 `uc 1 ADCAL 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "13181
-[s S1712 . 1 `uc 1 ADCS0 1 0 :1:0 
+[s S1716 . 1 `uc 1 ADCS0 1 0 :1:0 
 `uc 1 ADCS1 1 0 :1:1 
 `uc 1 ADCS2 1 0 :1:2 
 `uc 1 ACQT0 1 0 :1:3 
 `uc 1 ACQT1 1 0 :1:4 
 `uc 1 ACQT2 1 0 :1:5 
 ]
-[s S1719 . 1 `uc 1 . 1 0 :3:0 
+[s S1723 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CHSN3 1 0 :1:3 
 `uc 1 VCFG01 1 0 :1:4 
 `uc 1 VCFG11 1 0 :1:5 
 ]
-[u S1724 . 1 `S1707 1 . 1 0 `S1712 1 . 1 0 `S1719 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES1724  1 e 1 @4033 ]
-[s S1746 . 1 `uc 1 . 1 0 :1:0 
+[u S1728 . 1 `S1711 1 . 1 0 `S1716 1 . 1 0 `S1723 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES1728  1 e 1 @4033 ]
+[s S1750 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "13300
-[s S1749 . 1 `uc 1 ADON 1 0 :1:0 
+[s S1753 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 `uc 1 VCFG 1 0 :2:6 
 ]
-[s S1754 . 1 `uc 1 . 1 0 :1:0 
+[s S1758 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -818,33 +818,33 @@
 `uc 1 VCFG0 1 0 :1:6 
 `uc 1 VCFG1 1 0 :1:7 
 ]
-[s S1763 . 1 `uc 1 . 1 0 :1:0 
+[s S1767 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S1766 . 1 `uc 1 . 1 0 :1:0 
+[s S1770 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S1769 . 1 `uc 1 . 1 0 :1:0 
+[s S1773 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S1772 . 1 `uc 1 . 1 0 :1:0 
+[s S1776 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S1775 . 1 `uc 1 . 1 0 :1:0 
+[s S1779 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 `uc 1 . 1 0 :5:2 
 `uc 1 ADCAL 1 0 :1:7 
 ]
-[u S1780 . 1 `S1746 1 . 1 0 `S1749 1 . 1 0 `S1754 1 . 1 0 `S1763 1 . 1 0 `S1766 1 . 1 0 `S1769 1 . 1 0 `S1772 1 . 1 0 `S1775 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES1780  1 e 1 @4034 ]
+[u S1784 . 1 `S1750 1 . 1 0 `S1753 1 . 1 0 `S1758 1 . 1 0 `S1767 1 . 1 0 `S1770 1 . 1 0 `S1773 1 . 1 0 `S1776 1 . 1 0 `S1779 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1784  1 e 1 @4034 ]
 "13395
 [v _ADRES ADRES `VEus  1 e 2 @4035 ]
-[s S1640 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S1644 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "14991
-[s S1644 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S1648 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -852,26 +852,26 @@
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S1652 . 1 `S1640 1 . 1 0 `S1644 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES1652  1 e 1 @4042 ]
+[u S1656 . 1 `S1644 1 . 1 0 `S1648 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1656  1 e 1 @4042 ]
 "15041
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
-[s S1609 . 1 `uc 1 SCS 1 0 :2:0 
+[s S1613 . 1 `uc 1 SCS 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 `uc 1 IDLEN 1 0 :1:7 
 ]
 "16038
-[s S1615 . 1 `uc 1 SCS0 1 0 :1:0 
+[s S1619 . 1 `uc 1 SCS0 1 0 :1:0 
 `uc 1 SCS1 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S1622 . 1 `S1609 1 . 1 0 `S1615 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES1622  1 e 1 @4051 ]
+[u S1626 . 1 `S1613 1 . 1 0 `S1619 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES1626  1 e 1 @4051 ]
 [s S325 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
@@ -937,6 +937,23 @@
 [v _main main `(v  1 e 1 0 ]
 {
 "87
+} 0
+"239 C:\Users\User\Documents\MPLAB Projects\ISC-1_MAIN.X\peripherals.c
+[v _getSerialFromMemory getSerialFromMemory `(v  1 e 1 0 ]
+{
+"240
+[v getSerialFromMemory@state state `[64]uc  1 a 64 32 ]
+"246
+} 0
+"248
+[v _readRegisterFromProgram readRegisterFromProgram `(v  1 e 1 0 ]
+{
+"253
+[v readRegisterFromProgram@i i `i  1 a 2 30 ]
+"248
+[v readRegisterFromProgram@address address `us  1 p 2 26 ]
+[v readRegisterFromProgram@buffer buffer `*.39uc  1 p 2 28 ]
+"257
 } 0
 "488 C:\Users\User\Documents\MPLAB Projects\ISC-1_MAIN.X\boostercomms.c
 [v _SetCommsHigh SetCommsHigh `T(v  1 e 1 0 ]
@@ -1275,24 +1292,7 @@
 "227 C:\Users\User\Documents\MPLAB Projects\ISC-1_MAIN.X\peripherals.c
 [v _ReadFlashValues ReadFlashValues `(v  1 e 1 0 ]
 {
-"238
-} 0
-"240
-[v _getSerialFromMemory getSerialFromMemory `(v  1 e 1 0 ]
-{
-"241
-[v getSerialFromMemory@state state `[64]uc  1 a 64 32 ]
-"247
-} 0
-"249
-[v _readRegisterFromProgram readRegisterFromProgram `(v  1 e 1 0 ]
-{
-"254
-[v readRegisterFromProgram@i i `i  1 a 2 30 ]
-"249
-[v readRegisterFromProgram@address address `us  1 p 2 26 ]
-[v readRegisterFromProgram@buffer buffer `*.39uc  1 p 2 28 ]
-"258
+"237
 } 0
 "221
 [v _WriteFlashValues WriteFlashValues `(v  1 e 1 0 ]

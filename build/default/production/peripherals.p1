@@ -122,9 +122,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FlashUnlockSequence `(v ~T0 @X0 0 ef ]
 "18 mastercomms.h
 [v _iscSerialUSG `us ~T0 @X0 0 e ]
-"28 peripherals.h
-[v _getSerialFromMemory `(v ~T0 @X0 0 ef ]
-"27
+"27 peripherals.h
 [v _readRegisterFromProgram `(v ~T0 @X0 0 ef2`us`*uc ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
@@ -7687,61 +7685,58 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;peripherals.c: 234: nextSerialUSG = 1;
 "234
 [e = _nextSerialUSG -> -> 1 `i `us ]
-[; ;peripherals.c: 235: getSerialFromMemory();
+[; ;peripherals.c: 235: WriteFlashValues();
 "235
-[e ( _getSerialFromMemory ..  ]
-[; ;peripherals.c: 236: WriteFlashValues();
-"236
 [e ( _WriteFlashValues ..  ]
-"237
+"236
 }
 [e :U 877 ]
+[; ;peripherals.c: 236: }
 [; ;peripherals.c: 237: }
-[; ;peripherals.c: 238: }
-"238
+"237
 [e :UE 876 ]
 }
-"240
+"239
 [v _getSerialFromMemory `(v ~T0 @X0 1 ef ]
 {
-[; ;peripherals.c: 240: void getSerialFromMemory(void){
+[; ;peripherals.c: 239: void getSerialFromMemory(void){
 [e :U _getSerialFromMemory ]
 [f ]
-"241
+"240
 [v _state `uc ~T0 @X0 -> 64 `i a ]
-[; ;peripherals.c: 241: unsigned char state[64];
-[; ;peripherals.c: 242: readRegisterFromProgram(0x4000, state);
-"242
+[; ;peripherals.c: 240: unsigned char state[64];
+[; ;peripherals.c: 241: readRegisterFromProgram(0x4000, state);
+"241
 [e ( _readRegisterFromProgram (2 , -> -> 16384 `i `us &U _state ]
-[; ;peripherals.c: 244: iscSerialUSG = state[1] << 8;
-"244
+[; ;peripherals.c: 243: iscSerialUSG = state[1] << 8;
+"243
 [e = _iscSerialUSG -> << -> *U + &U _state * -> -> -> 1 `i `ui `ux -> -> # *U &U _state `ui `ux `i -> 8 `i `us ]
-[; ;peripherals.c: 245: iscSerialUSG |= state[0];
-"245
+[; ;peripherals.c: 244: iscSerialUSG |= state[0];
+"244
 [e =| _iscSerialUSG -> *U + &U _state * -> -> -> 0 `i `ui `ux -> -> # *U &U _state `ui `ux `us ]
-[; ;peripherals.c: 247: }
-"247
+[; ;peripherals.c: 246: }
+"246
 [e :UE 878 ]
 }
-"249
+"248
 [v _readRegisterFromProgram `(v ~T0 @X0 1 ef2`us`*uc ]
 {
-[; ;peripherals.c: 249: void readRegisterFromProgram(unsigned short address, unsigned char buffer[]){
+[; ;peripherals.c: 248: void readRegisterFromProgram(unsigned short address, unsigned char buffer[]){
 [e :U _readRegisterFromProgram ]
 [v _address `us ~T0 @X0 1 r1 ]
 [v _buffer `*uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;peripherals.c: 250: TBLPTRU = 0x00;
-"250
+[; ;peripherals.c: 249: TBLPTRU = 0x00;
+"249
 [e = _TBLPTRU -> -> 0 `i `uc ]
-[; ;peripherals.c: 251: TBLPTRH = (unsigned char)(address >> 8);
-"251
+[; ;peripherals.c: 250: TBLPTRH = (unsigned char)(address >> 8);
+"250
 [e = _TBLPTRH -> >> -> _address `ui -> 8 `i `uc ]
-[; ;peripherals.c: 252: TBLPTRL = (unsigned char)(address & 0xFF);
-"252
+[; ;peripherals.c: 251: TBLPTRL = (unsigned char)(address & 0xFF);
+"251
 [e = _TBLPTRL -> & -> _address `ui -> -> 255 `i `ui `uc ]
-[; ;peripherals.c: 254: for(int i = 0; i < 64; i ++){
-"254
+[; ;peripherals.c: 253: for(int i = 0; i < 64; i ++){
+"253
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -7749,22 +7744,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 881  ]
 [e :U 880 ]
 {
-[; ;peripherals.c: 255: asm("TBLRD*+");
-"255
-[; <" TBLRD*+ ;# ">
-[; ;peripherals.c: 256: buffer[i] = TABLAT;
-"256
-[e = *U + _buffer * -> _i `x -> -> # *U _buffer `i `x _TABLAT ]
-"257
-}
+[; ;peripherals.c: 254: asm("TBLRD*+");
 "254
+[; <" TBLRD*+ ;# ">
+[; ;peripherals.c: 255: buffer[i] = TABLAT;
+"255
+[e = *U + _buffer * -> _i `x -> -> # *U _buffer `i `x _TABLAT ]
+"256
+}
+"253
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 64 `i 880  ]
 [e :U 881 ]
-"257
+"256
 }
+[; ;peripherals.c: 256: }
 [; ;peripherals.c: 257: }
-[; ;peripherals.c: 258: }
-"258
+"257
 [e :UE 879 ]
 }

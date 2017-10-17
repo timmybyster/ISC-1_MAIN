@@ -92,6 +92,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v F7317 `(v ~T0 @X0 1 tf ]
 "21 boostercomms.h
 [v _SetCommsHigh `TF7317 ~T0 @X0 0 e ]
+"28 peripherals.h
+[v _getSerialFromMemory `(v ~T0 @X0 0 ef ]
 "11 mastercomms.h
 [v _ProcessMasterComms `(v ~T0 @X0 0 ef ]
 "9695 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46j13.h
@@ -7367,6 +7369,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 76: statusFlagsUSLG |= 0b000000001000000000000000;
 "76
 [e =| _statusFlagsUSLG -> -> 32768 `ui `um ]
+[; ;main.c: 77: getSerialFromMemory();
+"77
+[e ( _getSerialFromMemory ..  ]
 [; ;main.c: 78: while(1){
 "78
 [e :U 835 ]

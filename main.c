@@ -74,7 +74,7 @@ void main(void){
     SetCommsHigh();                                                             //Set the booster comms line high
 
     statusFlagsUSLG |= FLAG_DISP_ACTIVE;                                        //Activate the booster dispatcher
-
+    getSerialFromMemory();
     while(1){                                                                    //Sit and wait for packets from the IBC
         ProcessMasterComms();
         
